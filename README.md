@@ -58,7 +58,7 @@ To assess sensitivity to model capacity, we provide a scale ablation in the supp
 
 **Response.** We agree that the current discussion overemphasizes Rank-1 and does not sufficiently address the mAP/mINP trade-off. To address this concretely, we will update Table 2 by reporting both the default cost-efficient setting, CFM top-k=5, and an accuracy-oriented setting, CFM top-k=10. As shown in the Table 2, CFM top-k=10 achieves the best Rank-1 on all three datasets and becomes more competitive in mAP, achieving the best mAP on Market-1501 and CUHK03 while remaining close on DukeMTMC.
 
-**Table 2: Comparison of our reasoning-centric re-ranking method with existing re-ranking approaches on three benchmarks. All existing baselines are evaluated under top-k=10. Red text indicates improvements over the baseline.**
+**Table 2: Comparison of our reasoning-centric re-ranking method with existing re-ranking approaches on three benchmarks. All existing baselines are evaluated under top-k=10.**
 
 | Base | Method | Venue | Market-1501 mAP | Market-1501 R1 | Market-1501 mINP | DukeMTMC mAP | DukeMTMC R1 | DukeMTMC mINP | CUHK03 mAP | CUHK03 R1 | CUHK03 mINP |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|

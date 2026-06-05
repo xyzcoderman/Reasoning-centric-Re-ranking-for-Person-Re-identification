@@ -78,7 +78,7 @@ We will also move the shortlist-size sensitivity analysis into the main paper. A
 <img width="757" height="502" alt="one" src="https://github.com/user-attachments/assets/e2c63241-ede6-4bbe-8e80-39bad8ef8820" />
 
 
-**Effect of shortlist size k on Rank-1 accuracy.**
+**Figure: Effect of shortlist size k on Rank-1 accuracy.**
 
 ### Q3.2. Contribution is mostly prompt engineering.
 

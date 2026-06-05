@@ -74,6 +74,10 @@ To assess sensitivity to model capacity, we provide a scale ablation in the supp
 
 We will also move the shortlist-size sensitivity analysis into the main paper. As shown in Figure 1, increasing k from 1 to 10 steadily improves Rank-1 accuracy on CUHK03 from 79.5% to 86.9%. This confirms that a relatively larger shortlist gives CFM more opportunities to recover correct identities missed by the initial retrieval. In the revision, we will explicitly discuss this cost-accuracy trade-off: k=5 provides an efficient balance, while k=10 gives stronger accuracy-oriented performance. Overall, we will revise the results discussion to clearly state that CFM improves top-rank identity selection.
 
+
+<img width="757" height="502" alt="one" src="https://github.com/user-attachments/assets/e2c63241-ede6-4bbe-8e80-39bad8ef8820" />
+
+
 **Effect of shortlist size k on Rank-1 accuracy.**
 
 ### Q3.2. Contribution is mostly prompt engineering.

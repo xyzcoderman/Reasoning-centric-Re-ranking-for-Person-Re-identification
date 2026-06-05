@@ -38,7 +38,7 @@ We thank all reviewers for their insightful and constructive comments. We apprec
 
 **Response.** We agree that evaluating only one MLLM family limits evidence of robustness across different backbones.
 
-**Comparison of different MLLM variants on CUHK03. The suffix “B” denotes model size in billions of parameters. Performance is evaluated at top-k = 5.**
+**Table 1: Comparison of different MLLM variants on CUHK03. The suffix “B” denotes model size in billions of parameters. Performance is evaluated at top-k = 5.**
 
 | Model | mAP | Rank-1 | mINP |
 |---|---:|---:|---:|
@@ -46,7 +46,7 @@ We thank all reviewers for their insightful and constructive comments. We apprec
 | Qwen3-VL-4B-Instruct | 74.6 | 69.8 | 70.1 |
 | Qwen3-VL-8B-Instruct | **83.4** | **85.5** | **76.9** |
 
-To assess sensitivity to model capacity, we provide a scale ablation in the supplementary material using Qwen3-VL-2B, 4B, and 8B under the same CFM process. As shown above Table, performance improves consistently with model scale, and Qwen3-VL-8B achieves the best results. This suggests that CFM benefits from stronger MLLM capacity within the evaluated model family. We will revise the manuscript to clarify this scope and identify cross-backbone validation with additional MLLMs as future work.
+To assess sensitivity to model capacity, we provide a scale ablation in the supplementary material using Qwen3-VL-2B, 4B, and 8B under the same CFM process. As shown Table 1, performance improves consistently with model scale, and Qwen3-VL-8B achieves the best results. This suggests that CFM benefits from stronger MLLM capacity within the evaluated model family. We will revise the manuscript to clarify this scope and identify cross-backbone validation with additional MLLMs as future work.
 
 ### Q2.4. Interpretability and evidence-grounded reasoning.
 
@@ -56,9 +56,9 @@ To assess sensitivity to model capacity, we provide a scale ablation in the supp
 
 ### Q3.1. Limited overall ranking quality.
 
-**Response.** We agree that the current discussion overemphasizes Rank-1 and does not sufficiently address the mAP/mINP trade-off. To address this concretely, we will update Table 2 by reporting both the default cost-efficient setting, CFM top-k=5, and an accuracy-oriented setting, CFM top-k=10. As shown in the following table, CFM top-k=10 achieves the best Rank-1 on all three datasets and becomes more competitive in mAP, achieving the best mAP on Market-1501 and CUHK03 while remaining close on DukeMTMC.
+**Response.** We agree that the current discussion overemphasizes Rank-1 and does not sufficiently address the mAP/mINP trade-off. To address this concretely, we will update Table 2 by reporting both the default cost-efficient setting, CFM top-k=5, and an accuracy-oriented setting, CFM top-k=10. As shown in the Table 2, CFM top-k=10 achieves the best Rank-1 on all three datasets and becomes more competitive in mAP, achieving the best mAP on Market-1501 and CUHK03 while remaining close on DukeMTMC.
 
-**Comparison of our reasoning-centric re-ranking method with existing re-ranking approaches on three benchmarks. All existing baselines are evaluated under top-k=10. Red text indicates improvements over the baseline.**
+**Table 2: Comparison of our reasoning-centric re-ranking method with existing re-ranking approaches on three benchmarks. All existing baselines are evaluated under top-k=10. Red text indicates improvements over the baseline.**
 
 | Base | Method | Venue | Market-1501 mAP | Market-1501 R1 | Market-1501 mINP | DukeMTMC mAP | DukeMTMC R1 | DukeMTMC mINP | CUHK03 mAP | CUHK03 R1 | CUHK03 mINP |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -76,7 +76,7 @@ We will also move the shortlist-size sensitivity analysis into the main paper. A
 
 
 <img width="757" height="502" alt="one" src="https://github.com/user-attachments/assets/e2c63241-ede6-4bbe-8e80-39bad8ef8820" />
-**Figure: Effect of shortlist size k on Rank-1 accuracy.**
+**Figure 1: Effect of shortlist size k on Rank-1 accuracy.**
 
 ### Q3.2. Contribution is mostly prompt engineering.
 
